@@ -1,5 +1,5 @@
 {
-  "name": "tempora",
+  "name": "tempora-js",
   "version": "0.1.0",
   "description": "Tiny, zero-dependency human-friendly time utilities: relative time ('3 minutes ago'), duration formatting ('1h 30m') and parsing ('1h30m'). Localized via Intl. Works in Node, Deno, Bun and the browser.",
   "type": "module",

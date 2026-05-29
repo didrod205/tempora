@@ -4,11 +4,11 @@
 
 **Human-friendly time, in ~1 KB. Relative time, duration formatting & parsing — zero dependencies, localized via `Intl`.**
 
-[![npm version](https://img.shields.io/npm/v/tempora.svg?color=success)](https://www.npmjs.com/package/tempora)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/tempora?label=gzip)](https://bundlephobia.com/package/tempora)
+[![npm version](https://img.shields.io/npm/v/tempora-js.svg?color=success)](https://www.npmjs.com/package/tempora-js)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/tempora-js?label=gzip)](https://bundlephobia.com/package/tempora-js)
 [![CI](https://github.com/didrod205/tempora/actions/workflows/ci.yml/badge.svg)](https://github.com/didrod205/tempora/actions/workflows/ci.yml)
-[![types](https://img.shields.io/npm/types/tempora.svg)](https://www.npmjs.com/package/tempora)
-[![license](https://img.shields.io/npm/l/tempora.svg)](./LICENSE)
+[![types](https://img.shields.io/npm/types/tempora-js.svg)](https://www.npmjs.com/package/tempora-js)
+[![license](https://img.shields.io/npm/l/tempora-js.svg)](./LICENSE)
 
 </div>
 
@@ -16,7 +16,7 @@ Three tiny functions for the time formatting every app ends up needing — witho
 pulling in a date library or shipping locale data.
 
 ```ts
-import { timeAgo, formatDuration, parseDuration } from "tempora";
+import { timeAgo, formatDuration, parseDuration } from "tempora-js";
 
 timeAgo(Date.now() - 3 * 60_000);   // "3 minutes ago"
 timeAgo(then, { locale: "ko" });    // "3분 전"
@@ -39,15 +39,17 @@ parseDuration("1h30m");             // 5_400_000
 ## Install
 
 ```bash
-npm install tempora
-# or: pnpm add tempora  /  yarn add tempora  /  bun add tempora
+npm install tempora-js
+# or: pnpm add tempora-js  /  yarn add tempora-js  /  bun add tempora-js
 ```
+
+> The npm package is published as **`tempora-js`** (the name `tempora` was already reserved on npm). Everything you import stays the same.
 
 Ships ESM **and** CommonJS:
 
 ```ts
-import { timeAgo } from "tempora";        // ESM / TypeScript
-const { timeAgo } = require("tempora");   // CommonJS
+import { timeAgo } from "tempora-js";        // ESM / TypeScript
+const { timeAgo } = require("tempora-js");   // CommonJS
 ```
 
 ## Usage
