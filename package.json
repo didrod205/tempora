@@ -1,0 +1,62 @@
+{
+  "name": "tempora",
+  "version": "0.1.0",
+  "description": "Tiny, zero-dependency human-friendly time utilities: relative time ('3 minutes ago'), duration formatting ('1h 30m') and parsing ('1h30m'). Localized via Intl. Works in Node, Deno, Bun and the browser.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "time",
+    "timeago",
+    "time-ago",
+    "relative-time",
+    "duration",
+    "humanize",
+    "humanize-duration",
+    "format-duration",
+    "parse-duration",
+    "intl",
+    "i18n",
+    "zero-dependency"
+  ],
+  "author": "didrod205 (https://github.com/didrod205)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didrod205/tempora.git"
+  },
+  "bugs": {
+    "url": "https://github.com/didrod205/tempora/issues"
+  },
+  "homepage": "https://github.com/didrod205/tempora#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
